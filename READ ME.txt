@@ -1,0 +1,5 @@
+1. Run 'RunCode.m' to generate results. The celltype can be 'SW' or 'ST' which track swarmer cell or stalked cell respectively.
+   mutant can be 'WT', 'deltaPodJ', or 'PodJ+'.
+2. 'main1.m' is codes for simulation.
+3. 'parameters.m' includes paramters, where 'ver=4' is for the manuscript of the 12th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics.
+4. ODEs are in 'ODE_DivK.m'.
