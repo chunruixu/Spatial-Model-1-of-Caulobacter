@@ -291,7 +291,8 @@ dydt(60)= -(p.mu+p.deg_divK)*y(60) ...
 %% DivKPb
 for i=61:64
 % dydt(i)=0;
-dydt(i)=-(p.mu+p.deg_divK)*y(i)+p.fb_DivKP*y(i-4)-p.bf_DivKP*y(i);
+dydt(i)=-(p.mu+p.deg_divK)*y(i)+p.fb_DivKP*y(i-4)-p.bf_DivKP*y(i)...
+    -p.dephoDivK*(y(i-24)+y(i-20))*y(i);%%%%%%%%%%%%%%%%%%%%%%%!!!!!!!!!!!!!!!!!!!!!
 end%S - PodJ, CtrA, PleC, PerP
 %% PerP
 m_perP=((1-m)*y(72)+m);

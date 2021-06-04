@@ -401,7 +401,7 @@ dydt(60)= -(p.mu+p.deg_divK)*y(60) ...
 -p.fb_DivKP*y(60)+p.bf_DivKP*y(60+4)+4*p.D_DivKP*(y(59)-y(60))/((y(73)+y(74))^2);
 %% DivKPb
 for i=61:64
-dydt(i)=-(p.mu+p.deg_divK)*y(i)+p.fb_DivKP*y(i-4)-p.bf_DivKP*y(i);
+dydt(i)=-(p.mu+p.deg_divK)*y(i)+p.fb_DivKP*y(i-4)-p.bf_DivKP*y(i)-p.dephoDivK*(y(i-24)+y(i-20))*y(i);
 end%S - PodJ, CtrA, PleC, PerP
 %% PerP
 m_perP=((1-m)*y(72)+m);
