@@ -383,7 +383,7 @@ p.deg_podJ1 =0.007;%0.007;%0.007;%paper116
 
 p.dnv_podJ =0.1*theta(3);% 15              % denovo polymerization 12 in dissertation for table C.2; 1 for table C.1
 p.aut1_podJ =30*theta(4);%10;               % autocatalytic polymerization (pole)
-p.aut1_podJ1=0*0.1*p.aut1_podJ;%central compartment autcatalytic polymerization
+p.aut1_podJ1=0.7*p.aut1_podJ;%central compartment autcatalytic polymerization
 % p.depol_basal=0.2;
 p.depol_podJ =0.2*theta(5);%0.5;             % deplymerization 
 
