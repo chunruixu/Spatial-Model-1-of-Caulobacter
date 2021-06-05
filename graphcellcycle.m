@@ -81,7 +81,7 @@ PopZ(5,:)=a;
 pcolor(time, M, PopZ)
 shading flat
 colorbar
-caxis([0 12]);
+% caxis([0 12]);
 % xlabel('time (min)')
 title('(c) PopZ')
 % subplot(2,4,4)%SpmX_T
@@ -407,10 +407,13 @@ end
 % figure()
 % subplot(2,1,1)
 % PodJL=yout(1:4,:)+yout(5:8,:);   PodJS=yout(9:12,:);
-% PodJL_T=sum(PodJL);  PodJS_T=sum(PodJS);
+% % PodJL_T=sum(PodJL);  PodJS_T=sum(PodJS);
+% PodJL_T=(PodJL(1,:)+PodJL(4,:)).*yout(73,:)+(PodJL(2,:)+PodJL(3,:)).*yout(74,:);  PodJS_T=(PodJS(1,:)+PodJS(4,:)).*yout(73,:)+(PodJS(2,:)+PodJS(3,:)).*yout(74,:); 
 % PodJ_T=PodJL_T+PodJS_T;
 % Fraction_L=PodJL_T./PodJ_T;
 % Fraction_S=PodJS_T./PodJ_T;
+% 
+% 
 % %%data
 % Time=[0 20 40 60 80 100 120 140 160];
 % %%Calculate fraction of relative levels by getdata
@@ -443,10 +446,12 @@ end
 %    
 % subplot(2,1,2)
 % PodJL=yout(1:4,:)+yout(5:8,:);   PodJS=yout(9:12,:);
-% PodJL_T=sum(PodJL);  PodJS_T=sum(PodJS);
+% % PodJL_T=sum(PodJL);  PodJS_T=sum(PodJS);
+% PodJL_T=(PodJL(1,:)+PodJL(4,:)).*yout(73,:)+(PodJL(2,:)+PodJL(3,:)).*yout(74,:);  PodJS_T=(PodJS(1,:)+PodJS(4,:)).*yout(73,:)+(PodJS(2,:)+PodJS(3,:)).*yout(74,:); 
 % PodJ_T=PodJL_T+PodJS_T;
 % Fraction_L=PodJL_T./PodJ_T;
 % Fraction_S=PodJS_T./PodJ_T;
+% 
 % %%data
 % Time=[0 20 40 60 80 100 120 140 160];
 % %%Calculate fraction of relative levels by getdata
